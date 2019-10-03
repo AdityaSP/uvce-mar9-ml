@@ -1,0 +1,46 @@
+0. check python
+python --version
+if python is already 3.x
+
+    1. conda create --name django-oscar 
+
+else 
+    1. conda create --name django-oscar python=3.7
+    
+    
+2. conda activate django-oscar
+-----------------ENV is created--------------------
+
+3. # install django-oscar - a ecommerce framework
+pip install django-oscar
+
+4. # know the details of django-oscar  
+pip show django-oscar
+
+5. # we have to run a script called as django-admin
+(django-oscar) D:\code\ecomm>where django-admin.py
+D:\sw\python37\Scripts\django-admin.py
+
+(django-oscar) D:\code\ecomm>python D:\sw\python37\Scripts\django-admin.py startproject myshop
+
+# FOLLOW THE STEPS IN https://django-oscar.readthedocs.io/en/2.0.0/internals/getting_started.html to make changes to setting.py and urls.py
+
+6. migrate or create the database
+
+python manage.py migrate
+
+7. create a superuser by entering a user name and password -> this will be required by the dashboard of the ecommerce site
+
+python manage.py createsuperuser
+
+8. run the server
+
+python manage.py runserver
+
+On a browser now access the site using http://localhost:8000
+On a browser now access the admin/dashboard site using http://localhost:8000/dashboard
+
+
+
+
+    
