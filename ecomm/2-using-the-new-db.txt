@@ -1,0 +1,18 @@
+https://github.com/AdityaSP/uvce-mar9-ml
+--> ecomm
+    --> db.sqlite
+    
+copy db.sqlite to myshop/db.sqlite
+
+change settings db name from  
+        'NAME': 'db.sqlite3',
+               TO
+        'NAME': 'db.sqlite',
+
+Restart your server
+
+access localhost:8000
+
+access localhost:8000/dashboard
+    username : superuser
+    password : testing
